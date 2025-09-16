@@ -15,9 +15,10 @@
                     string safeKid = queueKids.Dequeue();
                     queueKids.Enqueue(safeKid);
                 }
-                Console.WriteLine($"This is {queueKids.Dequeue()}");
+                Console.WriteLine($"Removed {queueKids.Dequeue()}");
 
             }
+            Console.WriteLine($"Last is {queueKids.Dequeue()}");
         }
     }
 }
