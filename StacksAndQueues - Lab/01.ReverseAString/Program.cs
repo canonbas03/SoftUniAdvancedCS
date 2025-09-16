@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string input = Console.ReadLine();
+
+            Stack<char> reversed = new Stack<char>(input);
+
+            while (reversed.Count > 0)
+            {
+                Console.Write(reversed.Pop());
+            }
         }
     }
 }
