@@ -17,7 +17,7 @@
                 stack.Pop();
             }
 
-            if(stack.Count == 2) Console.WriteLine(0);
+            if(stack.Count == 0) Console.WriteLine(0);
             else
             {
                 int minNumber = int.MaxValue;
