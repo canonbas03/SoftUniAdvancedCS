@@ -30,7 +30,7 @@
         }
         static Queue<string> ReadSongs()
         {
-            IEnumerable<string> sequence = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            IEnumerable<string> sequence = Console.ReadLine().Split(", ", StringSplitOptions.RemoveEmptyEntries);
             return new Queue<string>(sequence);
         }
     }
