@@ -23,7 +23,7 @@
             foreach (var ch in text)
             {
                 if (dict.ContainsKey(ch)) stack.Push(dict[ch]);
-                else if (stack.Pop() != ch) return false;
+                else if (stack.Count == 0 || stack.Pop() != ch) return false;
             }
             return stack.Count == 0;
         }
