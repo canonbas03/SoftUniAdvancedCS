@@ -34,7 +34,7 @@ namespace _11.KeyRevolver
                     lockQueue.Dequeue();
                 }
 
-                if (currentBarrel == 0 && bulletStack.Count >= gunBarrel)
+                if (currentBarrel == 0 && bulletStack.Count > 0)
                 {
                     Console.WriteLine("Reloading!");
                     currentBarrel = gunBarrel;
