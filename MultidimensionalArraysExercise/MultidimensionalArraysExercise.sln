@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.MaximalSum", "03.Maximal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.SnakeMoves", "05.SnakeMoves\05.SnakeMoves.csproj", "{89B0AFE4-1D01-4CB1-AE1E-F4F2BDB46CD3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.KnightGame", "07.KnightGame\07.KnightGame.csproj", "{F65D99C0-8553-4023-A6BF-B1D622A52598}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{89B0AFE4-1D01-4CB1-AE1E-F4F2BDB46CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89B0AFE4-1D01-4CB1-AE1E-F4F2BDB46CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89B0AFE4-1D01-4CB1-AE1E-F4F2BDB46CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65D99C0-8553-4023-A6BF-B1D622A52598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65D99C0-8553-4023-A6BF-B1D622A52598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65D99C0-8553-4023-A6BF-B1D622A52598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65D99C0-8553-4023-A6BF-B1D622A52598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
