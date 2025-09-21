@@ -21,7 +21,7 @@
             {
                 string[] tokens = input.Split();
                 string command = tokens[0];
-                if (command == "swap")
+                if (command == "swap" && tokens.Length == 5)
                 {
                     int fromY = int.Parse(tokens[1]);
                     int fromX = int.Parse(tokens[2]);
