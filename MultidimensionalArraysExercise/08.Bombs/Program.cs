@@ -11,16 +11,16 @@ namespace _08.Bombs
             int[,] matrix = new int[size, size];
             for (int i = 0; i < size; i++)
             {
-                int[] values = Console.ReadLine().Split().Select(int.Parse).ToArray();
+                int[] values = Console.ReadLine().Split(" ",StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
                 for (int j = 0; j < size; j++)
                 {
                     matrix[i, j] = values[j];
                 }
             }
-            var coordinates = Console.ReadLine().Split();
+            var coordinates = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < coordinates.Length; i++)
             {
-                int[] values = coordinates[i].Split(",").Select(int.Parse).ToArray();
+                int[] values = coordinates[i].Split(",",StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
                 int row = values[0], col = values[1];
                 BombExplosion(row, col, matrix);
 
@@ -33,6 +33,7 @@ namespace _08.Bombs
         private static void BombExplosion(int row, int col, int[,] matrix)
         {
            int bombValue = matrix[row, col];
+            if (bombValue <= 0) return;
             for (int i = 0;i < 3;i++)
             {
                 for (int j = 0; j < 3; j++)
