@@ -24,7 +24,7 @@
 
             foreach (var student in studentGrades)
             {
-                Console.WriteLine($"{student.Key} -> {string.Join(" ", student.Value)} (avg: {student.Value.Average():F2})");
+                Console.WriteLine($"{student.Key} -> {string.Join(" ", student.Value.Select(sv => sv.ToString("F2")))} (avg: {student.Value.Average():F2})");
             }
         }
     }
