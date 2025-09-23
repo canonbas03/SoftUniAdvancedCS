@@ -36,9 +36,9 @@
                 Console.WriteLine($"{index}. {user} : {follows.FollowedBy.Count} followers, {follows.Following.Count} following");
                 if(index == 1)
                 {
-                    foreach (var follower in follows.FollowedBy)
+                    foreach (var follower in follows.FollowedBy.Order())
                     {
-                        Console.WriteLine($"* {follower}");
+                        Console.WriteLine($"*  {follower}");
                     }
                 }
                 index++;
