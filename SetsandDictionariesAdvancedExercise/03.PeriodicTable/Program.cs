@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            var chemicals = new SortedSet<string>();
+            var chemicals = new HashSet<string>();
             int counter = int.Parse(Console.ReadLine());
             for (int i = 0; i < counter; i++)
             {
@@ -15,7 +15,7 @@
                 }
             }
 
-            Console.WriteLine(string.Join(" ", chemicals));
+            Console.WriteLine(string.Join(" ", chemicals.OrderBy(ch => ch)));
         }
     }
 }
