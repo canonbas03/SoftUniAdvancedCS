@@ -15,19 +15,18 @@
 
                     string forceSide = token[0];
                     string user = token[1];
-
-                    if (!sides.ContainsKey(forceSide))
+                    if(!users.ContainsKey(user))
                     {
-                        sides[forceSide] = new List<string>();
+                        if (!sides.ContainsKey(forceSide))
+                        {
+                            sides[forceSide] = new List<string>();
+                        }
+                        if (!sides[forceSide].Contains(user))
+                            sides[forceSide].Add(user);
+                     
+                            users[user] = forceSide;
+                        
                     }
-                    if (!sides[forceSide].Contains(user))
-                        sides[forceSide].Add(user);
-                    if (!users.ContainsKey(user))
-                    {
-                        users[user] = forceSide;
-                    }
-
-
                 }
                 else if (input.Contains(" -> "))
                 {
@@ -38,24 +37,35 @@
 
                     string oldSide = string.Empty;
 
-                    if (users.ContainsKey(user))
+                    if(users.ContainsKey(user))
                     {
                         oldSide = users[user];
                         sides[oldSide].Remove(user);
-                    }
-                    if (!sides.ContainsKey(newForceSide))
-                    {
-                        sides[newForceSide] = new List<string>();
-                    }
 
-                    if (!sides[newForceSide].Contains(user))
+                        if (!sides.ContainsKey(newForceSide))
+                        {
+                            sides[newForceSide] = new List<string>();
+                        }
                         sides[newForceSide].Add(user);
 
+
+                    }
+                    else
+                    {
+                        if (!sides.ContainsKey(newForceSide))
+                        {
+                            sides[newForceSide] = new List<string>();
+                        }
+                        if (!sides[newForceSide].Contains(user))
+                            sides[newForceSide].Add(user);
+
+                    }
+                    
                     if (oldSide != newForceSide)
                     {
                         users[user] = newForceSide;
                         Console.WriteLine($"{user} joins the {newForceSide} side!");
-                    }   
+                    }
                 }
             }
 
