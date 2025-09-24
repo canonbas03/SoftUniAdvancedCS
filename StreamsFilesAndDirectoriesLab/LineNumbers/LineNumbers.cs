@@ -1,6 +1,8 @@
 ﻿namespace LineNumbers
 {
     using System.IO;
+    using System.Security.Cryptography;
+
     public class LineNumbers
     {
         static void Main()
@@ -13,6 +15,15 @@
 
         public static void RewriteFileWithLineNumbers(string inputFilePath, string outputFilePath)
         {
+            using var reader = new StreamReader(inputFilePath);
+            using var writer = new StreamWriter(outputFilePath);
+            int counter = 1;
+            while (!reader.EndOfStream)
+            {
+                var line = reader.ReadLine();
+                writer.WriteLine($"{counter}. {line}");
+                counter++;
+            }
         }
     }
 }
