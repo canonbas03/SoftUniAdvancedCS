@@ -19,10 +19,23 @@
 
         public static void SplitBinaryFile(string sourceFilePath, string partOneFilePath, string partTwoFilePath)
         {
+            byte[] allBytes = File.ReadAllBytes(sourceFilePath);
+            int firstPartLength = (allBytes.Length + 1) / 2;
+
+            byte[] partOne = allBytes.Take(firstPartLength).ToArray();
+            byte[] partTwo = allBytes.Skip(firstPartLength).ToArray();
+
+            File.WriteAllBytes(partOneFilePath, partOne);
+            File.WriteAllBytes(partTwoFilePath, partTwo);
         }
 
         public static void MergeBinaryFiles(string partOneFilePath, string partTwoFilePath, string joinedFilePath)
         {
+            byte[] partOne = File.ReadAllBytes(partOneFilePath);
+            byte[] partTwo = File.ReadAllBytes(partTwoFilePath);
+
+            byte[] merged = partOne.Concat(partTwo).ToArray();
+            File.WriteAllBytes(joinedFilePath, merged);
         }
     }
 }
