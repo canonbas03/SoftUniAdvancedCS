@@ -18,6 +18,8 @@
             using FileStream inputFileStream = new FileStream(inputFilePath, FileMode.Open, FileAccess.Read);
             using FileStream outputFileStream = new FileStream(outputFilePath, FileMode.Create, FileAccess.Write);
 
+             // Easier way:
+             // inputFileStream.CopyTo(outputFileStream);
             int byteCount = 0;
             byte[] buffer = new byte[1024];
             while ((byteCount = inputFileStream.Read(buffer)) != 0)
