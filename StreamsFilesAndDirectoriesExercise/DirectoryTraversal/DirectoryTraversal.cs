@@ -38,7 +38,7 @@
                 sb.AppendLine(extension);
                 foreach (FileInfo file in files.OrderBy(x => x.Length))
                 {
-                    sb.AppendLine($"--{file.Name} - {file.Length / 1024m}kb");
+                    2sb.AppendLine($"--{file.Name} - {file.Length / 1024m}kb");
                 }
             }
             return sb.ToString();
@@ -46,7 +46,7 @@
 
         public static void WriteReportToDesktop(string textContent, string reportFileName)
         {
-            string destination = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string destination = Environment.GetFolderPath(Environment.SpecialFolder.CommonDesktopDirectory);
             File.WriteAllText(Path.Combine(destination, reportFileName), textContent);
         }
     }
