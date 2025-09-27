@@ -38,7 +38,7 @@
                 sb.AppendLine(extension);
                 foreach (FileInfo file in files.OrderBy(x => x.Length))
                 {
-                    2sb.AppendLine($"--{file.Name} - {file.Length / 1024m}kb");
+                    sb.AppendLine($"--{file.Name} - {file.Length / 1024m}kb");
                 }
             }
             return sb.ToString();
