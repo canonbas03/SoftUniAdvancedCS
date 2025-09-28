@@ -20,15 +20,10 @@
             int ageTreshold = int.Parse(Console.ReadLine());
             string format = Console.ReadLine();
 
-            Func<int, bool> conditionCheck;
-            if (condition == "younger")
-            {
-                conditionCheck = age => age < ageTreshold;
-            }
-            else
-            {
-                conditionCheck = age => age >= ageTreshold;
-            }
+            Func<int, bool> conditionCheck = 
+            condition == "younger" 
+            ? conditionCheck = age => age < ageTreshold 
+            : conditionCheck = age => age >= ageTreshold;
 
             List<(string name, int age)> filteredPeople = Filter(people, conditionCheck);
 
@@ -48,7 +43,7 @@
 
             foreach (var (name, age) in filteredPeople)
             {
-                string result = (formatter(name, age));
+                string result = formatter(name, age);
 
                 Console.WriteLine(result);
 
