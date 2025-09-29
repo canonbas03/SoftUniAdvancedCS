@@ -28,8 +28,9 @@
                 if (predicate(i))
                     result.Add(i);
             }
+
             return result;
-            continue;
+            
         }
     }
 }
