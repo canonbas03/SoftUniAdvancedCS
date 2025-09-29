@@ -29,6 +29,7 @@
                     result.Add(i);
             }
             return result;
+            continue;
         }
     }
 }
