@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36401.2 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Car", "01.Car\01.Car.csproj", "{E0BB79DA-79A9-42A1-8D7D-4AF0B74B1C59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.CarExtension", "02.CarExtension\02.CarExtension.csproj", "{0EDDF214-7B85-4D0D-AE0B-9562EE4FBDE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E0BB79DA-79A9-42A1-8D7D-4AF0B74B1C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0BB79DA-79A9-42A1-8D7D-4AF0B74B1C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0BB79DA-79A9-42A1-8D7D-4AF0B74B1C59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EDDF214-7B85-4D0D-AE0B-9562EE4FBDE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EDDF214-7B85-4D0D-AE0B-9562EE4FBDE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EDDF214-7B85-4D0D-AE0B-9562EE4FBDE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EDDF214-7B85-4D0D-AE0B-9562EE4FBDE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
