@@ -102,6 +102,7 @@
                 Console.Write(car.WhoAmI());
             }
             string hello;
+            string mello;
         }
     }
 }
