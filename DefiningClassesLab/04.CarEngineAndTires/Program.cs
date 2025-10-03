@@ -14,7 +14,6 @@
             //Car carTwo = new Car(make, model, year);
             //Car carThree = new Car(make, model, year, fuelQuantity, fuelConsumption);
 
-            string hello;
             Engine engine = new Engine(200, 5);
             Tire[] tires = new Tire[]
             {
