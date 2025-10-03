@@ -101,8 +101,6 @@
                 car.Drive(20);
                 Console.Write(car.WhoAmI());
             }
-            string hello;
-            string mello;
         }
     }
 }
