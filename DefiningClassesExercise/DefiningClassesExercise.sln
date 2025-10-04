@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36401.2 d17.14
+VisualStudioVersion = 17.14.36401.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.DefineAClassPerson", "01.DefineAClassPerson\01.DefineAClassPerson.csproj", "{48681C81-94AE-43B7-9050-4A413403B1A6}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.OpinionPoll", "04.OpinionPoll\04.OpinionPoll.csproj", "{7F5EE752-BC04-4F89-A4A9-B8846190CB5F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.SpeedRacing", "06.SpeedRacing\06.SpeedRacing.csproj", "{66C7DB61-D53A-4B19-B07D-E6DDE28357EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.RawData", "7.RawData\7.RawData.csproj", "{7A53DFCE-C864-434C-BA77-0B43BB5808F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{66C7DB61-D53A-4B19-B07D-E6DDE28357EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66C7DB61-D53A-4B19-B07D-E6DDE28357EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66C7DB61-D53A-4B19-B07D-E6DDE28357EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A53DFCE-C864-434C-BA77-0B43BB5808F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A53DFCE-C864-434C-BA77-0B43BB5808F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A53DFCE-C864-434C-BA77-0B43BB5808F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A53DFCE-C864-434C-BA77-0B43BB5808F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
