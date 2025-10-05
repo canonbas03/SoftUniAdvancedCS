@@ -29,6 +29,30 @@ namespace CustomLinkedList
         {
             this.InsertBetween(this._end.Prev, this._end, value);
         }
+
+        public int GetFirst()
+        {
+            this.ValidateNotEmpty();
+            return _start.Next.Value;
+        }
+
+        public int GetLast()
+        {
+            this.ValidateNotEmpty();
+            return _end.Prev.Value;
+        }
+
+        public void RemoveFirst()
+        {
+            this.ValidateNotEmpty();
+            this.RemoveBetween(_start, _start.Next.Next);
+        }
+
+        public void RemoveLast()
+        {
+            this.ValidateNotEmpty();
+            this.RemoveBetween(_end.Prev.Prev, _end);
+        }
         
         private void ValidateNotEmpty()
         {
@@ -45,6 +69,17 @@ namespace CustomLinkedList
             newNode.Prev = a;
 
             _count++;
+        }
+
+        private void RemoveBetween(MyLinkedListNode a, MyLinkedListNode b)
+        {
+            a.Next.Prev = null;
+            b.Prev.Next = null;
+
+            a.Next = b;
+            b.Prev = a;
+
+            this._count--;
         }
     }
 }
