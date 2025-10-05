@@ -7,8 +7,13 @@
             CustomList customList = new CustomList();
             customList.Add(2);
             customList.Add(8);
-            Console.WriteLine(customList[0]);
+            //Console.WriteLine(customList[0]);
+            customList.InsertAt(1, 99);
 
+            for (int i = 0; i < customList.Count; i++)
+            {
+                Console.WriteLine(customList[i]);
+            }
             //for (int i = 0; i < 5; i++)
             //{
             //    customList.Add(i);
@@ -21,7 +26,7 @@
 
             //}
 
-            
+
         }
     }
 }
