@@ -17,9 +17,9 @@ namespace GenericScale
             this.right = right;
         }
 
-        public bool AreEqual(T a, T b)
+        public bool AreEqual()
         {
-            return a.Equals(b);
+            return this.left.Equals(this.right);
         }
     }
 }
