@@ -1,4 +1,6 @@
-﻿namespace GenericCountMethod
+﻿using System.Diagnostics.Metrics;
+
+namespace GenericCountMethod
 {
     internal class Program
     {
@@ -16,15 +18,24 @@
             Console.WriteLine(CountGreaterThan(list, compareValue));
 
         }
-        static int CountGreaterThan<T>(List<T> list, T compareValue)
+
+        static int CountGreaterThan<T>(List<T> list, T compareValue) => Count(list, el => Comparer<T>.Default.Compare(el, compareValue) > 0);
+        //{
+        //    int count = 0;
+        //    foreach (T item in list)
+        //    {
+        //        int compareResult = Comparer<T>.Default.Compare(item, compareValue);
+        //        if (compareResult > 0) count++;
+        //    }
+        //    return count;
+        //}
+        static int Count<T>(List<T> list, Func<T, bool> condition)
         {
             int count = 0;
             foreach (T item in list)
-            {
-                int compareResult = Comparer<T>.Default.Compare(item, compareValue);
-                if(compareResult > 0) count++; 
-            }
-            return count;
+                if (condition(item)) count++;
+
+            return (count);
         }
     }
 }
