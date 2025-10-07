@@ -5,16 +5,16 @@
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            var list = new List<Box<string>>(capacity: n);
+            var list = new List<Box<int>>(capacity: n);
             for (int i = 0; i < n; i++)
             {
-                string value = Console.ReadLine();
-                var box = new Box<string>(value);
+                int value = int.Parse(Console.ReadLine());
+                var box = new Box<int>(value);
                 list.Add(box);
             }
             int[] indexes = Console.ReadLine().Split().Select(int.Parse).ToArray();
             Swap(list, indexes[0], indexes[1]);
-            foreach (Box<string> item in list)
+            foreach (Box<int> item in list)
             {
                 Console.WriteLine(item);
             }
