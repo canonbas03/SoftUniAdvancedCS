@@ -1,4 +1,6 @@
-﻿namespace GenericSwapMethod
+﻿using System.Threading.Channels;
+
+namespace GenericSwapMethod
 {
     public class Program
     {
@@ -14,10 +16,7 @@
             }
             int[] indexes = Console.ReadLine().Split().Select(int.Parse).ToArray();
             Swap(list, indexes[0], indexes[1]);
-            foreach (Box<int> item in list)
-            {
-                Console.WriteLine(item);
-            }
+            list.ForEach(Console.WriteLine);
         }
 
         static void Swap<T>(List<T> list, int index1, int index2)
