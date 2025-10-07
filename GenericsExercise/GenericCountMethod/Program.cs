@@ -5,14 +5,14 @@
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            var list = new List<string>(n);
+            var list = new List<double>(n);
             for (int i = 0; i < n; i++)
             {
-                string text = Console.ReadLine();
-                list.Add(text);
+                double value = double.Parse(Console.ReadLine());
+                list.Add(value);
             }
 
-            string compareValue = Console.ReadLine();
+            double compareValue = double.Parse(Console.ReadLine());
             Console.WriteLine(CountGreaterThan(list, compareValue));
 
         }
