@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36401.2 d17.14
+VisualStudioVersion = 17.14.36401.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericBox", "GenericBox\GenericBox.csproj", "{AE2DA6D0-6DC5-48B2-8FDF-17F0551DDB90}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericSwapMethod", "GenericSwapMethod\GenericSwapMethod.csproj", "{757CEE7D-D8CE-405A-8F5D-D8EB998687F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericCountMethod", "GenericCountMethod\GenericCountMethod.csproj", "{3CF5296C-31E9-4E39-A34C-1CA1854EB598}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTuple", "MyTuple\MyTuple.csproj", "{5D1F32E9-3745-41EB-BC2C-C6A7A408A351}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{3CF5296C-31E9-4E39-A34C-1CA1854EB598}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CF5296C-31E9-4E39-A34C-1CA1854EB598}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CF5296C-31E9-4E39-A34C-1CA1854EB598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1F32E9-3745-41EB-BC2C-C6A7A408A351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1F32E9-3745-41EB-BC2C-C6A7A408A351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1F32E9-3745-41EB-BC2C-C6A7A408A351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1F32E9-3745-41EB-BC2C-C6A7A408A351}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
