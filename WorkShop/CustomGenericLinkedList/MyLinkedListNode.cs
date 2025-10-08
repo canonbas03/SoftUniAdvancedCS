@@ -1,4 +1,4 @@
-﻿namespace CustomGenericLinkedList
+﻿namespace CustomDoublyLinkedList
 {
     public class MyLinkedListNode<TNode>
     {

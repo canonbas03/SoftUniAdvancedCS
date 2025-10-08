@@ -1,13 +1,13 @@
 ﻿
-namespace CustomGenericLinkedList
+namespace CustomDoublyLinkedList
 {
-    public class MyLinkedList<T>
+    public class DoublyLinkedList<T>
     {
 
         private readonly MyLinkedListNode<T> _start, _end;
         private int _count;
         public int Count => _count;
-        public MyLinkedList()
+        public DoublyLinkedList()
         {
             _start = new MyLinkedListNode<T>(default);
             _end = new MyLinkedListNode<T>(default);
@@ -38,16 +38,20 @@ namespace CustomGenericLinkedList
             return _end.Prev.Value;
         }
 
-        public void RemoveFirst()
+        public T RemoveFirst()
         {
             this.ValidateNotEmpty();
+            var nodeToRemove = _start.Next;
             this.RemoveBetween(_start, _start.Next.Next);
+            return nodeToRemove.Value;
         }
 
-        public void RemoveLast()
+        public T RemoveLast()
         {
             this.ValidateNotEmpty();
+            var nodeToRemove = _end.Prev;
             this.RemoveBetween(_end.Prev.Prev, _end);
+            return nodeToRemove.Value;
         }
 
         private void ValidateNotEmpty()
@@ -76,6 +80,32 @@ namespace CustomGenericLinkedList
             b.Prev = a;
 
             this._count--;
+        }
+
+        public void ForEach(Action<T> action)
+        {
+            var current = _start.Next;
+            while (current != _end)
+            {
+                action(current.Value);
+                current = current.Next;
+            }
+        }
+
+        public T[] ToArray()
+        {
+            //ValidateNotEmpty();
+            T[] array = new T[_count];
+            var current = _start.Next;
+            int index = 0;
+
+            while (current != _end)
+            {
+                array[index] = current.Value; 
+                current = current.Next;
+                index++;
+            }
+            return array;
         }
     }
 }
