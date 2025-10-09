@@ -51,8 +51,10 @@ namespace IteratorsAndComparators
                 if (this.index >= this.books.Count) return false;
 
                 return true;
-            }
 
+                // return index < books.Count
+            }
+            
             public void Reset()
             {
                 this.index = -1;
