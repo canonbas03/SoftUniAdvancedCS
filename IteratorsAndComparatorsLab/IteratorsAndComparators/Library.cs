@@ -13,7 +13,7 @@ namespace IteratorsAndComparators
 
         public Library(params Book[] books)
         {
-            this.Books = new SortedSet<Book>(books);
+            this.Books = new SortedSet<Book>(books, new BookComparator());
         }
 
         public IEnumerator<Book> GetEnumerator()
@@ -31,7 +31,7 @@ namespace IteratorsAndComparators
             private List<Book> books;
             private int index;
 
-            public LibraryIterator(List<Book>books)
+            public LibraryIterator(List<Book> books)
             {
                 this.books = books;
                 Reset();
