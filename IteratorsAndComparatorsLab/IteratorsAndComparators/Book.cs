@@ -1,6 +1,6 @@
 ﻿namespace IteratorsAndComparators
 {
-    internal class Book
+    public class Book : IComparable<Book>
     {
         public string Title { get; set; }
         public int Year { get; set; }
@@ -12,6 +12,21 @@
             this.Title = title;
             this.Year = year;
             this.Authors = authors.ToList();
+        }
+
+        public int CompareTo(Book other)
+        {
+            int result = this.Year.CompareTo(other.Year);
+            if(result == 0)
+            {
+                result = this.Title.CompareTo(other.Title);
+            }
+
+            return result;
+        }
+        public override string ToString()
+        {
+            return $"{this.Title} - {this.Year}";
         }
     }
 }

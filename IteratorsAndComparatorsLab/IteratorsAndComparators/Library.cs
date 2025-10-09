@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 
 namespace IteratorsAndComparators
 {
-    internal class Library : IEnumerable<Book>
+    public class Library : IEnumerable<Book>
     {
-        public List<Book> Books;
+        public SortedSet<Book> Books;
 
         public Library(params Book[] books)
         {
-            this.Books = books.ToList();
+            this.Books = new SortedSet<Book>(books);
         }
 
         public IEnumerator<Book> GetEnumerator()
         {
-            return new LibraryIterator(this.Books);
+            return new LibraryIterator(this.Books.ToList());
         }
 
         IEnumerator IEnumerable.GetEnumerator()
