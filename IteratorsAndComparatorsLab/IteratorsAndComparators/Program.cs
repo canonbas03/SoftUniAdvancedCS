@@ -8,6 +8,11 @@
             var book2 = new Book("Skyfall",1998, "APT.");
 
             var library = new Library(book1,book2);
+
+            foreach(Book book in library)
+            {
+                Console.WriteLine(book.Title);
+            }
         }
     }
 }
