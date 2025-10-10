@@ -34,6 +34,15 @@
                     T element = iterator.Print();
                     Console.WriteLine(element);
                 }
+                else if(input == "PrintAll")
+                {
+                    foreach (var item in iterator)
+                    {
+                        Console.Write(item);
+                        Console.Write(" ");
+                    }
+                    Console.WriteLine();
+                }
             }
             catch (Exception e)
             {

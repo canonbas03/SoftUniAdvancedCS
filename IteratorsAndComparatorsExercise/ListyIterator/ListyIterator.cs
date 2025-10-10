@@ -1,8 +1,9 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Collections;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ListyIterator
 {
-    public class ListyIterator<T>
+    public class ListyIterator<T> : IEnumerable<T>
     {
         private readonly List<T> _list;
         private int _index;
@@ -31,6 +32,16 @@ namespace ListyIterator
         {
             return index < this._list.Count;
         }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = 0; i < this._list.Count; i++)
+            {
+                yield return this._list[i];
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     }
 }
 /*
