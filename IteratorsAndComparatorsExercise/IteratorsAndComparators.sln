@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListyIterator", "ListyItera
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackIterator", "StackIterator\StackIterator.csproj", "{A3ED3D66-A0B8-420F-A791-35D5621E38FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Froggy", "Froggy\Froggy.csproj", "{C4B3BC51-0C2B-45AC-9EA4-C646DF753813}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A3ED3D66-A0B8-420F-A791-35D5621E38FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3ED3D66-A0B8-420F-A791-35D5621E38FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3ED3D66-A0B8-420F-A791-35D5621E38FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4B3BC51-0C2B-45AC-9EA4-C646DF753813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B3BC51-0C2B-45AC-9EA4-C646DF753813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4B3BC51-0C2B-45AC-9EA4-C646DF753813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B3BC51-0C2B-45AC-9EA4-C646DF753813}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
