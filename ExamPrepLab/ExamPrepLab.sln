@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36401.2 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ClimbThePeeks", "01.ClimbThePeeks\01.ClimbThePeeks.csproj", "{E8AF2B15-6DB3-49F0-AD37-8559C9E5E936}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.BombHasBeenPlanted", "02.BombHasBeenPlanted\02.BombHasBeenPlanted.csproj", "{50324CA0-4CD1-4684-B1D5-4547C07ED53C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E8AF2B15-6DB3-49F0-AD37-8559C9E5E936}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8AF2B15-6DB3-49F0-AD37-8559C9E5E936}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8AF2B15-6DB3-49F0-AD37-8559C9E5E936}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50324CA0-4CD1-4684-B1D5-4547C07ED53C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50324CA0-4CD1-4684-B1D5-4547C07ED53C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50324CA0-4CD1-4684-B1D5-4547C07ED53C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50324CA0-4CD1-4684-B1D5-4547C07ED53C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
