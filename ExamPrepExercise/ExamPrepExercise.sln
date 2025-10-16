@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36401.2 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.RubberDuckDebuggers", "01.RubberDuckDebuggers\01.RubberDuckDebuggers.csproj", "{B30BCEC0-52EA-444A-B2BC-5445B1820274}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.EscapeTheMaze", "02.EscapeTheMaze\02.EscapeTheMaze.csproj", "{F196ECB5-A8C8-4BB8-9BEC-9D0F3659873B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B30BCEC0-52EA-444A-B2BC-5445B1820274}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B30BCEC0-52EA-444A-B2BC-5445B1820274}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B30BCEC0-52EA-444A-B2BC-5445B1820274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F196ECB5-A8C8-4BB8-9BEC-9D0F3659873B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F196ECB5-A8C8-4BB8-9BEC-9D0F3659873B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F196ECB5-A8C8-4BB8-9BEC-9D0F3659873B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F196ECB5-A8C8-4BB8-9BEC-9D0F3659873B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
