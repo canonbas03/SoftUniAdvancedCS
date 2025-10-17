@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36401.2 d17.14
+VisualStudioVersion = 17.14.36401.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.RubberDuckDebuggers", "01.RubberDuckDebuggers\01.RubberDuckDebuggers.csproj", "{B30BCEC0-52EA-444A-B2BC-5445B1820274}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.EscapeTheMaze", "02.EscapeTheMaze\02.EscapeTheMaze.csproj", "{F196ECB5-A8C8-4BB8-9BEC-9D0F3659873B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoeStore", "ShoeStore\ShoeStore.csproj", "{6E5E8459-E4B9-2D14-B77F-96FA499B1FAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F196ECB5-A8C8-4BB8-9BEC-9D0F3659873B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F196ECB5-A8C8-4BB8-9BEC-9D0F3659873B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F196ECB5-A8C8-4BB8-9BEC-9D0F3659873B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E5E8459-E4B9-2D14-B77F-96FA499B1FAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E5E8459-E4B9-2D14-B77F-96FA499B1FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E5E8459-E4B9-2D14-B77F-96FA499B1FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E5E8459-E4B9-2D14-B77F-96FA499B1FAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
