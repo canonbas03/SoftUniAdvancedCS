@@ -8,6 +8,11 @@ namespace Farm
         {
             var dog = new Dog();
             dog.Bark();
+
+            var puppy = new Puppy();
+            puppy.Bark();
+            puppy.Eat();
+            puppy.Weep();
         }
     }
 }
