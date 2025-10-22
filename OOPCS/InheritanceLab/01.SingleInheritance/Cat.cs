@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01.SingleInheritance
+namespace Farm
 {
-    public class Animal
+    public class Cat : Animal
     {
-        public void Eat()
+        public void Meow()
         {
-            Console.WriteLine("eating...");
+            Console.WriteLine("meowing...");
         }
     }
 }

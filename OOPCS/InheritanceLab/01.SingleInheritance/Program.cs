@@ -1,6 +1,4 @@
-﻿using _01.SingleInheritance;
-
-namespace Farm
+﻿namespace Farm
 {
     public class StartUp
     {
