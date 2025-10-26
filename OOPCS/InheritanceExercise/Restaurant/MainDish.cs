@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Restaurant
 {
-    internal class Beverages : Product
+    public class MainDish : Food
     {
+        public MainDish(string name, decimal price, double grams) : base(name, price, grams)
+        {
+        }
     }
 }
