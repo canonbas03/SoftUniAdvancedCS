@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36401.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ClassBoxData", "01.ClassBoxData\01.ClassBoxData.csproj", "{EEF52534-E180-4D1A-AFEB-56DA024C21D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalFarm", "AnimalFarm\AnimalFarm.csproj", "{4B44037B-FF32-2C3B-CB05-A10CADF5E8DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEF52534-E180-4D1A-AFEB-56DA024C21D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF52534-E180-4D1A-AFEB-56DA024C21D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF52534-E180-4D1A-AFEB-56DA024C21D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF52534-E180-4D1A-AFEB-56DA024C21D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B44037B-FF32-2C3B-CB05-A10CADF5E8DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B44037B-FF32-2C3B-CB05-A10CADF5E8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B44037B-FF32-2C3B-CB05-A10CADF5E8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B44037B-FF32-2C3B-CB05-A10CADF5E8DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE1D36AA-A0E6-493C-9D4E-044E0683BED0}
+	EndGlobalSection
+EndGlobal
