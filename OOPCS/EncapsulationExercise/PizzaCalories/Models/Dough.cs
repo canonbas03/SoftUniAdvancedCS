@@ -73,12 +73,16 @@ namespace PizzaCalories.Models
                 weight = value;
             }
         }
-        public double CalculateCalories()
+        public double Calories
         {
-            double flourTypeModifier = modifierByFlourType[flourType.ToLower()];
-            double bakingTechniqueModifier = modifierByBakingTechnique[bakingTechnique.ToLower()];
+            get
+            {
+                double flourTypeModifier = modifierByFlourType[flourType.ToLower()];
+                double bakingTechniqueModifier = modifierByBakingTechnique[bakingTechnique.ToLower()];
 
-            return BaseCaloriesPerGram * flourTypeModifier * bakingTechniqueModifier * Weight;
+                return BaseCaloriesPerGram * flourTypeModifier * bakingTechniqueModifier * Weight;
+            }
+          
         }
     }
 }
