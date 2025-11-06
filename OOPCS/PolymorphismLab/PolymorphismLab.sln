@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36401.2 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathOperation", "MathOperation\MathOperation.csproj", "{894DA58F-1ACF-41A5-9286-9C1BBC60FDDA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animals", "Animals\Animals.csproj", "{AB41434B-0B93-41B2-9C9D-CE07623AC7F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{894DA58F-1ACF-41A5-9286-9C1BBC60FDDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{894DA58F-1ACF-41A5-9286-9C1BBC60FDDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{894DA58F-1ACF-41A5-9286-9C1BBC60FDDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB41434B-0B93-41B2-9C9D-CE07623AC7F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB41434B-0B93-41B2-9C9D-CE07623AC7F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB41434B-0B93-41B2-9C9D-CE07623AC7F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB41434B-0B93-41B2-9C9D-CE07623AC7F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
