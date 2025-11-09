@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareRoot", "SquareRoot\Sq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterNumbers", "EnterNumber\EnterNumbers.csproj", "{6E9AEBD3-6C02-48FB-B75D-663FC8570CE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cards", "Cards\Cards.csproj", "{3036239E-64E6-413E-90F9-9D245780D2C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfIntegers", "SumOfIntegers\SumOfIntegers.csproj", "{99EBFA0A-09AB-41FE-91D3-400647DC88D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{6E9AEBD3-6C02-48FB-B75D-663FC8570CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E9AEBD3-6C02-48FB-B75D-663FC8570CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E9AEBD3-6C02-48FB-B75D-663FC8570CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3036239E-64E6-413E-90F9-9D245780D2C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3036239E-64E6-413E-90F9-9D245780D2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3036239E-64E6-413E-90F9-9D245780D2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3036239E-64E6-413E-90F9-9D245780D2C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99EBFA0A-09AB-41FE-91D3-400647DC88D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99EBFA0A-09AB-41FE-91D3-400647DC88D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99EBFA0A-09AB-41FE-91D3-400647DC88D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99EBFA0A-09AB-41FE-91D3-400647DC88D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
