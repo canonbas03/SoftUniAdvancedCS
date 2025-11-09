@@ -11,7 +11,6 @@
             {
                 try
                 {
-
                     string[] tokens = Console.ReadLine().Split();
 
                     string command = tokens[0];
@@ -54,6 +53,7 @@
                     exceptionCounter++;
                 }
             }
+
             Console.WriteLine(string.Join(", ",numbers));
         }
     }
