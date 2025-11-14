@@ -4,7 +4,6 @@
     {
         private IStreamable streamable;
 
-        // If we want to stream a music file, we can't
         public StreamProgressInfo(IStreamable streamable)
         {
             this.streamable = streamable;
