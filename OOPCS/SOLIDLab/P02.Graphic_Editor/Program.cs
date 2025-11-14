@@ -4,6 +4,8 @@
     {
         static void Main()
         {
+            var editor = new GraphicEditor();
+            editor.DrawShape(new Square());
         }
     }
 }
