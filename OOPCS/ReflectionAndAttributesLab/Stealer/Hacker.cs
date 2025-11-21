@@ -18,7 +18,6 @@
     public double BankAccountBalance { get; private set; }
 
     public void DownloadAllBankAccountsInTheWorld()
-
     {
 
     }
