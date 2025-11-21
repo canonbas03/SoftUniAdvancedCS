@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36401.2 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stealer", "Stealer\Stealer.csproj", "{DC88F7E1-2EA7-4C35-B84B-66444368E8C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorProblem", "AuthorProblem\AuthorProblem.csproj", "{8D02A515-A0B9-4BF1-ACD7-C8BE18189435}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DC88F7E1-2EA7-4C35-B84B-66444368E8C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC88F7E1-2EA7-4C35-B84B-66444368E8C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC88F7E1-2EA7-4C35-B84B-66444368E8C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D02A515-A0B9-4BF1-ACD7-C8BE18189435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D02A515-A0B9-4BF1-ACD7-C8BE18189435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D02A515-A0B9-4BF1-ACD7-C8BE18189435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D02A515-A0B9-4BF1-ACD7-C8BE18189435}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
