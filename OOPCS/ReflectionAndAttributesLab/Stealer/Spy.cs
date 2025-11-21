@@ -1,6 +1,8 @@
 ﻿using System.Reflection;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Stealer
 {
@@ -79,6 +81,30 @@ namespace Stealer
             foreach (MethodInfo method in allPrivMethods)
             {
                 sb.AppendLine(method.Name);
+            }
+
+            return sb.ToString();
+        }
+
+        public string CollectGetteraAndSetters(string className)
+        {
+            StringBuilder sb = new StringBuilder();
+            Type classType = Type.GetType(className);
+
+            MethodInfo[] allMethods = classType.
+                GetMethods(BindingFlags.Public | BindingFlags.NonPublic
+                | BindingFlags.Static | BindingFlags.Instance);
+
+            foreach (MethodInfo method in allMethods)
+            {
+                if(method.Name.StartsWith("get"))
+                {
+                    sb.AppendLine($"{method.Name} will return {method.ReturnType}");
+                }
+                else if(method.Name.StartsWith("set"))
+                {
+                    sb.AppendLine($"{method.Name} will set field of {method.ReturnType}");
+                }
             }
 
             return sb.ToString();
