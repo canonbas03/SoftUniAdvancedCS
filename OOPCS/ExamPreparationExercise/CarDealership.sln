@@ -5,6 +5,10 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarDealership", "CarDealership\CarDealership.csproj", "{EC8BBE57-4E54-46A4-A161-558B4FDE3566}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTrade", "AutoTrade\AutoTrade.csproj", "{DE134C02-9AAD-6D21-901E-ACF1C996664C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTrade.Tests", "AutoTrade.Tests\AutoTrade.Tests.csproj", "{250F7385-83CF-861C-63BE-310A05D25675}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{EC8BBE57-4E54-46A4-A161-558B4FDE3566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC8BBE57-4E54-46A4-A161-558B4FDE3566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC8BBE57-4E54-46A4-A161-558B4FDE3566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE134C02-9AAD-6D21-901E-ACF1C996664C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE134C02-9AAD-6D21-901E-ACF1C996664C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE134C02-9AAD-6D21-901E-ACF1C996664C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE134C02-9AAD-6D21-901E-ACF1C996664C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{250F7385-83CF-861C-63BE-310A05D25675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{250F7385-83CF-861C-63BE-310A05D25675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{250F7385-83CF-861C-63BE-310A05D25675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{250F7385-83CF-861C-63BE-310A05D25675}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
